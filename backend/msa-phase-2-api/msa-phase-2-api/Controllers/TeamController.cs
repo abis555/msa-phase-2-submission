@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace msa_phase_2_api.Controllers
 {
-
+    
+    /// <summary>
+    /// This is the Team Controller class that makes different Pokemon teams for the user.
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class TeamController : ControllerBase
@@ -27,6 +30,7 @@ namespace msa_phase_2_api.Controllers
             _client = clientFactory.CreateClient("pokemon");
         }
 
+        /// <summary />
         public static async Task<Pokemon> getPokemon (string value, HttpClient _client)
         {
             var res = await _client.GetAsync(value.ToString());
@@ -69,7 +73,9 @@ namespace msa_phase_2_api.Controllers
         /// <summary>
         /// Create Pokemon Team
         /// </summary>
-        /// <returns>Creates Team with given team name</returns>
+        /// <param name="teamName">The name of the team</param>
+        /// <param name="DoB">The date of birth of the user. The user needs to input the date in YYYY/MM/DD format.</param>
+        /// <returns>Creates Team with given team name and Date of birth</returns>
         [HttpPost]
         [ProducesResponseType(201)]
         public async Task<IActionResult> CreateAsync(string teamName, DateTime DoB)
@@ -105,6 +111,8 @@ namespace msa_phase_2_api.Controllers
         /// <summary>
         /// Update Pokemon Team
         /// </summary>
+        /// <param name="oldPoke">The name of the pokemon that the user want to replace</param>
+        /// <param name="newPoke">The name of the pokemon that the user want to add in team</param>
         /// <returns>Updates the team with given new pokemon with given old pokemon</returns>
         [HttpPut]
         [ProducesResponseType(201)]
@@ -148,7 +156,7 @@ namespace msa_phase_2_api.Controllers
         /// <summary>
         /// Delete Pokemon Team
         /// </summary>
-        /// <returns>Deletes the team of given id</returns>
+        /// <returns>Deletes the team of given name</returns>
         [HttpDelete]
         [ProducesResponseType(204)]
         public IActionResult Delete(string teamName)
