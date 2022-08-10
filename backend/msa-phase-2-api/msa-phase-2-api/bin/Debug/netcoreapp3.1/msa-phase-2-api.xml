@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>msa-phase-2-api</name>
+    </assembly>
+    <members>
+        <member name="M:msa_phase_2_api.Controllers.PokemonController.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary />
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.PokemonController.GetPokemon(System.String)">
+            <summary>
+            Gets the raw JSON consist of the searched pokemon 
+            </summary>
+            <returns>A JSON object representing all the details on that pokemon available in PokeApi</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary />
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.Get(System.String)">
+            <summary>
+            Get Pokemon Team
+            </summary>
+            <returns>Team with given name</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.Get">
+            <summary>
+            Get Pokemon Team
+            </summary>
+            <returns>All teams</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.CreateAsync(System.String,System.DateTime)">
+            <summary>
+            Create Pokemon Team
+            </summary>
+            <returns>Creates Team with given team name</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.UpdateAsync(System.String,System.String,System.String)">
+            <summary>
+            Update Pokemon Team
+            </summary>
+            <returns>Updates the team with given new pokemon with given old pokemon</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.UpdateTeamName(System.String,System.String)">
+            <summary>
+            Update Team Name
+            </summary>
+            <returns>Updates the team's name</returns>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.TeamController.Delete(System.String)">
+            <summary>
+            Delete Pokemon Team
+            </summary>
+            <returns>Deletes the team of given id</returns>
+        </member>
+        <member name="T:msa_phase_2_api.Controllers.WeatherForecastController">
+            <summary>
+            This is the weather forecast controller that comes as a default from the project template when creating
+            a new c# Web API application.
+            </summary>
+        </member>
+        <member name="M:msa_phase_2_api.Controllers.WeatherForecastController.Get">
+            <summary>
+            This endpoint takes no arguments, and gives you the weather forecast
+            </summary>
+            <returns>A JSON object describing the weather forecast</returns>
+        </member>
+    </members>
+</doc>
