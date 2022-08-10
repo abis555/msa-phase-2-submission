@@ -6,4 +6,4 @@ The details of the movie is mainly consist of title, description, director, rele
 
 ![Capture](https://user-images.githubusercontent.com/48300768/183882968-64464d50-213a-4a94-a4c6-53b501284a2e.JPG)
 
-In order to run the application, user needs to install to different modules. User need to run following in terminal: npm install axios and npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+In order to run the application, user needs to install to different modules. User need to run following in terminal: `npm install axios` and `npm install @mui/material @emotion/react @emotion/styled @mui/icons-material`.
