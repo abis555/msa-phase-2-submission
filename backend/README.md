@@ -1,5 +1,6 @@
 # Backend Submission
 
-This is the NZMSA phase 2 submission for Ajay Bisht. For phase 2, I have decided to choose frontend and backend for submission. 
+This is the backend submission for NZMSA phase 2. It is a Pokemon Team Api that a user can make different teams with three of their favorite pokemons. The teams are stored in local in-memory caching service. There are in total of six different APIs designed to give all the services to the user in order to make their Pokemon teams.
+![Capture](https://user-images.githubusercontent.com/48300768/183849760-413877e7-458e-46e6-af75-bb50a700e7ba.JPG)
 
-For frontend submission, I have designed a Studio Ghibli Movie Search Application using React, whereas for backend submission, I have designed a Pokemon Team Maker using .Net C#.
+
