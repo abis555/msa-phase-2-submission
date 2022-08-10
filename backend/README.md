@@ -9,6 +9,6 @@ For configuration files, two files are used to start the project, i.e., appsetti
 
 Dependency Injection (DI) is a programming technique that makes a class independent of its dependencies. It is one of the popular tools used in .Net C# as it reduces the amount you have to code, facilitating the creation of better applications and a smoother development process. Using middleware like swagger greatly helped in development phase when we needed to test and debug many parts of the code.
 
-Also, for this submission, a NUnit unit test project was made in order to test the functionality of the main project.
+Also, for this submission, a NUnit unit test project was made in order to test the functionality of the main project. By running all the tests, it was confirmed that all the functions are working fine. There are two tests that fails when running the unit test, however, running both again will make them green again.
 
 Using middleware libraries made the code easier to test as it greatly helped in testing the functionality of the API without writing too much test code. It also makes the debugging a lot easier too, in order to find the issue in the test code.
