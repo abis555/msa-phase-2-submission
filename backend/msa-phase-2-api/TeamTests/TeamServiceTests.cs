@@ -7,7 +7,7 @@ namespace TeamTests
 {
     public class TeamServiceTests
     {
-        static readonly List<Pokemon> pokemonList = new List<Pokemon> 
+        readonly List<Pokemon> pokemonList = new List<Pokemon> 
         { 
             new Pokemon { Id = 6, Name = "charizard" },
             new Pokemon { Id = 132, Name = "ditto" },
@@ -17,11 +17,6 @@ namespace TeamTests
         static readonly Team t1 = new Team { Id = 1, Name = "t1", pokemons = null };
         static readonly Team t2 = new Team { Id = 2, Name = "t2", pokemons = null };
         static readonly Team t3 = new Team { Id = 3, Name = "t3", pokemons = null };
-
-        static readonly List<Team> teamList = new List<Team>
-        {
-            t1, t2, t3
-        };
 
         [Test]
         public void TestGet_ReturnTeamName()
@@ -42,6 +37,11 @@ namespace TeamTests
             TeamService.Add(t3);
 
             var team = TeamService.GetAll();
+
+            var teamList = new List<Team>
+            {
+                t1, t2, t3
+            };
 
             Assert.AreEqual(teamList, team);
         }
